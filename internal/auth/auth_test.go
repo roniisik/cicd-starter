@@ -13,7 +13,7 @@ func TestGetAPIKey(t *testing.T) {
 		"basic test":        {input: "ApiKey 123", want: "123"},
 		"empty header test": {input: "", want: ""},
 		"no separator test": {input: "ApiKey123", want: ""},
-		"wrong format test": {input: "Key 123", want: ""},
+		"wrong format test": {input: "Key 123", want: "1"},
 	}
 
 	for name, tc := range tests {
